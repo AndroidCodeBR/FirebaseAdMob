@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">"FirebaseAdMob"</string>
+    <string name="btn_label">Show Interstitial AD</string>
+    <!-- Substitua pelos os IDs abaixo pelos gerados em sua conta AdMob-->
+    <!-- Replace the IDs below by your AdMob IDs-->
+    <string name="admob_banner_id" translatable="false">ca-app-pub-9999999999999/999999999999</string>
+    <string name="admob_instrstitial_id" translatable="false">ca-app-pub-9999999999999/999999999999</string>
+</resources>

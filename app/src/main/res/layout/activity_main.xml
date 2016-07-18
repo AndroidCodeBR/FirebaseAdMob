@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.androidcode.firebaseadmob.MainActivity">
+    <!--Botão para mostrar a publicidade Interstitial-->
+    <!--Button to show the Interstitial AD-->
+    <Button
+        android:id="@+id/btnInterstitial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_label"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <!-- Para mostrar o BANNER, use "(...) ads.AdView" como abaixo, e não esqueça de linkar o "xmlns:ads (...) no RelativeLayout-->
+    <!-- To show up the BANNER use "(...) ads.AdView" as below and dont forget to link the "xmlns:ads (...)" at RelativeLayout-->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adBanner"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"/>
+</RelativeLayout>
